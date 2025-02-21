@@ -11,7 +11,25 @@ import SwiftUI
 struct ListThemAllApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                Tab {
+                    PlaceIveBeenView()
+                } label: {
+                    Image(systemName: "globe")
+                    
+                }
+                Tab {
+                    ListOfStudents()
+                } label: {
+                    Image(systemName: "person.3")
+                    
+                }
+                
+                
+                
+                
+            }
+            
         }
     }
 }
